@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chonburi', cursive;
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    color: #000;
+}
+h1, h2, h3, h4{
+    line-height: 1.7;
+}
+img{
+    width: 100%;
+
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    position: relative;
+}
+.content{
+    margin-left: 200px;
+}
+
+.sec1{
+    margin: 2rem 0;
+}
+.sec1 .container{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 5rem;
+align-items: center;
+justify-content: center;
+}
+.sec1 h1{
+    font-size: 5rem;
+    margin-left: -70px;
+    text-shadow: 3px 7px rgb(192, 192, 192);
+}
+
+.sec3 h1{
+    font-size: 4rem;
+    margin-top: 100px;
+    margin-left: -100px;
+}
+.sec1 p
+{
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: 2rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+    margin-left: -30px;
+}
+.sec3 p
+{
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+    text-indent: 50px;
+    margin-left: -170px;
+}
+.sec3 img{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    margin-left: -50px;
+    margin-top: 70px;
+
+
+}
+.sec1 .btn{
+    display: inline-block;
+    background: black;
+    color: #fff;
+    padding: 0.8rem 3.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'GlacialIndifferenceRegular';
+    margin-top: 60px;
+    margin-left: -70px;
+}
+.sec2 .btn
+{
+    display: inline-block;
+    background:#fff;
+    color: rgb(0, 0, 0);
+    padding: 0.8rem 3.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'GlacialIndifferenceRegular';
+    /* margin-top: 60px; */
+    margin-left: -70px;
+    margin-bottom: 2rem;
+    width: 20%;
+    height: auto;
+}
+.sec3 .btn{
+    display: inline-block;
+    background: black;
+    color: #fff;
+    padding: 0.8rem 3.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'GlacialIndifferenceRegular';
+    margin-top: 30px;
+    /* margin-left: 150px; */
+    width: 20%;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/img/bg.png);
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+.sec2 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.sec2 h1{
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 100px;
+}
+.sec2 p
+{
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #fff;
+    text-indent: 50px;
+    margin-left: -70px;
+}
+.sec2 img{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    margin-left: 650px;
+    margin-top: -450px;
+    padding-bottom: 50px;
+}
+.sec3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/img/5.png);
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-position: right;
+    background-size: cover;
+
+}
+.sec3 .content3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: -500px;
+    margin-left:0px;
+    padding-bottom: 150px;
+}
+.gotop{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 40px;
+    right: 50px;
+    color: #000;
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+}
+.gotop h2{
+    font-size: 20px;
+    font-family: 'GlacialIndifferenceRegular';
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: #dcdcdc;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    padding-top: 1rem;
+    padding-right: 4rem;
+    width: 100%;
+    height: auto;
+}
+.footer-item:nth-child(1) h3/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    color: rgb(66, 65, 65);
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: 25px;
+    margin-top: 60px;
+} 
+.footer-item:nth-child(1) p/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    color: gray;
+    font-family: 'GlacialIndifferenceRegular';
+} 
+.footer-item:nth-child(2) h3/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    color: rgb(66, 65, 65);
+    font-family: 'GlacialIndifferenceRegular';
+    margin-top: 60px;
+} 
+.footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    width: 300px;
+    height: 50px;
+    background: #fffafa;
+    font-family: 'GlacialIndifferenceRegular';
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 20%;
+    padding: 5px;
+   
+} 
+.footer-item:nth-child(2) input[type="submit"]/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    width: 100px;
+    background : gray;
+    font-family: 'GlacialIndifferenceRegular';    
+    text-transform: uppercase;
+    color: rgb(202, 199, 199);
+}
+#back{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+
+}
+.NAVBAR1 {
+    background-color :rgb(255, 255, 255);
+    font-family: 'Chonburi', cursive;
+    font-size: 15px;
+}
+.nav-link{
+    border-radius: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.nav-link:hover{
+    border: 1px ;
+    background: rgb(133, 128, 128);
+}
+
+@media screen and (max-width: 800px){
+    .sec1 .container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        grid-gap: 1rem;
+    }
+    .sec1 .container div:first-child{
+        order: 2;
+    }
+    .sec1 .container div:last-child{
+        order: -1;
+    }
+    .sec1 img{
+        width: 70%;
+        margin: auto;
+    }
+    .sec1 h1{
+        font-size: 50px;
+        margin-left: 0px;
+    }
+    .sec1 p{
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    .sec1 .btn{
+        margin-left: 0px;
+    }
+    .content{
+        margin-left: 0px;
+    }
+    .sec2 .content{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .sec2 img{
+        width: 100%;
+        margin: auto;
+        margin-top: 15%;
+    }
+    .sec2 h1{
+        font-size: 50px;
+        margin-left: 0px;
+    }
+    .sec2 p{
+        font-size: 25px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .sec2 .btn{
+        margin-left: 0px;
+        width: auto;
+        height: auto;
+    }
+    .sec3 .content3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 0%;
+    }
+    .sec3 .container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        grid-gap: 0.1rem;
+        padding: 35px;
+    }
+    .sec3 .container div:first-child{
+        order: 2;
+    }
+    .sec3 img{
+        width: 100%;
+        margin: auto;
+        margin-top: 25%;
+    }
+    .sec3 h1{
+        font-size: 50px;
+        margin-left: 0px;
+    }
+    .sec3 p{
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    .sec3 .btn{
+        margin-left: 0px;
+        width: auto;
+    }
+    .gotop{
+        font-size: 30px;
+    }
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .footer-grid{
+        grid-template-columns:1fr ;
+        font-size: small;
+    }
+    .footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+        width: 100%;
+        height: auto;
+        background: #fffafa;
+        font-family: 'GlacialIndifferenceRegular';
+        border: none;
+        outline: none;
+        margin-top: 20px;
+        padding: 5px
+    }    
+    .footer-item:nth-child(2) h3/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+        margin-left: 0px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .footer-item:nth-child(1) h3{
+        margin-left: 0px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .footer-item:nth-child(2) input[type="submit"]{
+        margin-top: -50px;
+    }
+}
+@media screen and (max-width: 600px){
+    .sec3 .btn{
+        margin-left: 0px;
+        width: auto;
+    }
+    .sec2 .btn{
+        margin-left: 0px;
+        width: auto;
+        height: auto;
+    }
+}

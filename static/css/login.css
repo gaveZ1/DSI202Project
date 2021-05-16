@@ -1,0 +1,172 @@
+
+header{
+    background-color: #dcdcdc;
+    font-family: 'Chonburi', cursive;
+
+}
+.nav-link{
+    border-radius: 1rem;
+    text-align: center;
+    display: block;
+}
+.nav-link:hover{
+    border: 1px ;
+    background: rgb(133, 128, 128);
+}
+/*********************************************************************/
+.form{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-top: 3rem ;
+
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 2%;
+    font-family: 'Chonburi', cursive;
+    
+}
+
+.form a {
+    font-size: large;
+    font-family:'GlacialIndifferenceRegular' ;
+    margin-left: 32.5%;
+    margin-bottom: 2rem;
+}
+
+
+
+.login-field{
+    text-align: center;
+    
+}
+
+.login-field:nth-child(1) a{
+    position: absolute;
+    /* text-align: left ; */
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: large;
+}
+
+.login-field:nth-child(2) label{
+    
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: large;
+}
+
+.login-field input{
+    text-align: left;
+    margin: 1rem;
+    width: 37%;
+    height: 45px;
+    font-family: 'GlacialIndifferenceRegular';
+
+}
+
+.sing-in a{
+    width: 20%;
+    height: 50px;   
+    font-family: 'Chonburi', cursive; 
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    margin-left: 18%;
+
+}
+
+.sing-in{
+    width: 20%;
+    height: 50px;
+    
+    margin-left: 40%;
+    margin-top: 1rem;
+
+}
+
+
+/* .submit:hover{
+    background:#dcdcdc;
+    color: #000;
+} */
+
+
+.create_link {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2rem;
+    
+}
+.create_link a{
+    font-size:larger;
+    text-align: center;
+    margin-left: 0;
+    text-decoration: none;
+    color: #000;
+    
+}
+.create_link :hover{
+    font-size:large;
+    text-decoration: none;
+    color: rgb(82, 79, 79);
+    
+}
+/******************************************footer logo แพทฟร้อมทิพย์***************************************
+.footer-item{
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+}
+
+/****************************************Responsive**************************************/
+@media screen and (max-width: 800px ) /***ipad***/{
+    .login-field input{
+        width: 250px;
+        height: auto;
+    }
+    
+
+    .submit{
+        width: 120px;
+        height: auto;
+        margin-top: 1rem ;
+        margin-left: 42%;
+        
+    } 
+
+    input[type="submit"]{
+        width: 120px;
+        height: auto;
+        margin-top: 1rem ;
+        margin-left: 42%;
+        
+    } 
+    
+}
+
+@media screen and (max-width: 700px) /***mobile***/{
+    .login-field input{
+        width: 200px;
+        height: auto;
+    }
+    
+    .submit{
+        width: 100px;
+        height: auto;
+        margin-top: 1rem ;
+        margin-left: 37%;
+        
+    } 
+
+    input[type="submit"]{
+        width: 100px;
+        height: auto;
+        margin-top: 1rem ;
+        margin-left: 37%;
+        
+    } 
+   
+   
+}

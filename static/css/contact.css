@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chonburi', cursive;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/img/S__4087824.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.banner img
+{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  
+}
+.ban_content{
+  max-width: 750px;
+  position: relative;
+  text-align: center;
+}
+.ban_content h2{
+  margin-bottom: 50%;
+  color: #fff;
+  font-size: 65px;
+  margin-left: -220%;
+}
+.contact
+{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+.container
+{
+  position: relative;
+  display: flex;
+  z-index: 1000;
+  width: 100%;
+  margin-top: -500px;
+  display: flex;
+  justify-content: center;
+}
+.banner .contact
+{
+  max-width: 800px;
+  text-align: left;
+}
+.container .contactForm
+{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-left: 0px;
+  
+}
+.contactForm
+{
+  width: 80%;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0,0, 0.2);
+  max-width: 800px;
+}
+.container .contactForm h3
+{
+  color: #fff;
+  font-size: 30px;
+  width: 50%;
+  background: #000;
+  border: none;
+  padding:10px;
+  margin-left: -40px;
+  margin-top: -20px;
+}
+.container .contactForm .box, .container .contactForm .box2
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactForm .box .icon1
+{
+  min-width: 60px;
+  height: 60px;
+  background: rgb(22, 51, 145);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+}
+.container .contactForm .box .icon2
+{
+  min-width: 60px;
+  height: 60px;
+  background: rgb(59, 127, 182);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+}
+.container .contactForm .box .icon3
+{
+  min-width: 60px;
+  height: 60px;
+  background: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+}
+.container .contactForm .box2 .icon4
+{
+  min-width: 60px;
+  height: 60px;
+  background: rgb(201, 40, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+}
+.container .contactForm .box .text
+{
+  display: flex;
+  margin-left: 20px;
+  margin-top: 17px;
+  font-size: 20px;
+  color: #000;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactForm .box2 .text
+{
+  display: flex;
+  margin-left: 20px;
+  margin-top: 7px;
+  font-size: 20px;
+  color: #000;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactForm  h4
+{
+  font-family: 'GlacialIndifferenceRegular';
+}
+.contactInfo
+{
+  width: 35%;
+  padding: 34px;
+  background: #333;
+  box-shadow: 10px 10px 20px rgba(0, 0,0, 0.2);
+}
+.contactInfo h3
+{
+  font-size: 26px;
+  color: #fff;
+}
+.contactInfo p
+{
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  font-family: 'GlacialIndifferenceRegular';
+}
+.map_wrapper
+{
+  margin-top: 40px;
+  
+}
+.map 
+{
+  border-radius: 1rem;
+  width: 350px;
+  height: 350px;
+}
+.sth
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  height: 10vh;
+}
+.sth_content
+{
+  text-align: center;
+  max-width: 750px;
+  padding: 20px;
+}
+.sth_content h4
+{
+  color: #000;
+  font-size: 25px;
+  font-family: 'GlacialIndifferenceRegular';
+}
+.pic{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  margin-top: -230px;
+  padding: 10px;
+}
+.item img
+{
+  width: 100%;
+}
+.btn
+{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top:80px ;
+  width: 100%;
+  cursor: pointer;
+}
+a{
+  background: rgb(196, 195, 195);
+  padding: 15px 60px;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  border: none;
+}
+footer{
+  width: 100%;
+  height: auto;
+  background: #dcdcdc;
+  margin-top: 55px;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns:repeat(2,1fr) ;
+  padding-top: 1rem;
+  padding-right: 4rem;
+  width: 100%;
+  height: auto;
+}
+.footer-item h2{
+  font-size: 25px;
+  margin-left: 130px;
+  font-family: 'GlacialIndifferenceRegular';
+  color: gray;
+  padding: 5px;
+}
+.footer-item h3{
+  font-size: 25px;
+  font-family: 'GlacialIndifferenceRegular';
+  color: gray;
+  padding: 5px;
+}
+.footer-item p{
+  margin-left: 110px;
+  padding: 20px;
+}
+.footer-item:nth-child(1) h3/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+  color: gray;
+  font-family: 'GlacialIndifferenceRegular';
+} 
+.footer-item:nth-child(1) p/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+  color: gray;
+  font-family: 'GlacialIndifferenceRegular';
+} 
+.footer-item:nth-child(2) h3/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+  color: gray;
+  font-family: 'GlacialIndifferenceRegular';
+} 
+.footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+  width: 300px;
+  height: 50px;
+  background: #fffafa;
+  font-family: 'GlacialIndifferenceRegular';
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 20%;
+  padding: 5px;
+ 
+} 
+.footer-item:nth-child(2) input[type="submit"]/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+  width: 100px;
+  background : gray;
+  font-family: 'GlacialIndifferenceRegular';    
+  text-transform: uppercase;
+  color: rgb(202, 199, 199);
+}
+
+@media (max-width: 991px)
+{
+  .container
+  {
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  .container .contactInfo
+  {
+    width: 100%;
+    min-height: 400px;
+    margin-top: -2px;
+  }
+  .banner
+  {
+    padding: 50px
+  }
+  .ban_content h2
+  { 
+    font-size: 40px;
+    text-align: right;
+  }
+  .container .contactForm
+  {
+    width: 100%;
+    min-height: 400px;
+    margin-top: -200px;
+  }
+  .contact
+  {
+    flex-direction: column;
+  }
+  .sth
+  {
+    padding: 20px;
+    margin-top: 250px;
+  }
+  .container .contactForm h3
+  {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+  }
+  .pic
+  {
+    width: 30%;
+    margin-left: 12px;
+    margin-top: -300px;
+    padding: 5px;
+  }
+  .sth_content h4
+  {
+    font-size: 20px;
+    text-align: center;
+  }
+  .map
+  {
+    width: 100%;
+  }
+  .btn1
+  {
+    font-size: 20px;
+  }
+  .btn
+  {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .footer-grid{
+      grid-template-columns:1fr ;
+      font-size: small;
+  }
+  .footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+      width: 100%;
+      height: auto;
+      background: #fffafa;
+      font-family: 'GlacialIndifferenceRegular';
+      border: none;
+      outline: none;
+      margin-top: 10px;
+      padding: 5px
+  }    
+  .footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+      
+      margin-top: 2px;
+      margin-bottom: 0;
+      padding: 5px; 
+  } 
+}
+

@@ -1,0 +1,222 @@
+header{
+    background-color: #dcdcdc;
+    
+    font-family: 'Chonburi', cursive;
+
+}
+
+.nav-link{
+    border-radius: 1rem;
+    text-align: center;
+    display: block;
+}
+.nav-link:hover{
+    border: 1px ;
+    background: rgb(133, 128, 128);
+}
+
+
+/********************************** #CONTENT ***********************************/
+.content {
+    width: 100%;
+    height: auto;
+    background: white;
+}
+.content-heading {
+    font-size: x large;
+    font-family: 'Chonburi', cursive;
+    text-align: center;
+    padding: 3rem;
+}
+.contain-img-logo{
+    width: 45%;
+    height: auto;
+    margin-left: 39%;
+    
+}
+.content-info1 h3{
+    font-size: xx-large;    
+    font-family:'GlacialIndifferenceBold', 'Prompt', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bolder;
+}
+
+.content-info2 {
+    font-size: large;
+    font-family: 'GlacialIndifferenceRegular';
+    text-indent: 20%;
+    padding: 1rem;
+}
+.content-info3 {
+    font-size: xx-large;    
+    font-family:'GlacialIndifferenceBold', 'Prompt', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bolder;
+}
+/********************************** #img ***********************************/
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 0;
+}
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding-bottom: 6rem;
+    
+}
+
+.column:nth-child(1) {
+    text-align: center;
+    margin-top: 0%;
+    font-size: x large;
+    font-family: 'Chonburi', cursive;
+    
+}
+.column:nth-child(2) {
+    text-align: center;
+    margin-top: 0%;
+    font-size: x large;
+    font-family: 'Chonburi', cursive;
+}
+  
+.column:nth-child(3) {
+    text-align: center;
+    margin-top: 0%;
+    font-size: x large;
+    font-family: 'Chonburi', cursive;
+}
+/*****************************************InformationBottom**************************************************************/
+.info-heading1,.info-heading2{
+    margin: 3rem;
+    font-family: 'Chonburi', cursive;
+}  
+.info-heading2{
+
+    text-align: right;
+}
+.content-info4,.content-info5 {
+    font-size: xx-large;
+    font-family: 'GlacialIndifferenceRegular';
+    text-indent: 20%;
+    padding: 1rem;
+    text-align: left;
+}
+
+
+.contain-img-logo-bottom{
+    margin-left: 45%;
+    margin-bottom: 2rem;
+    width: 30%;
+    height: auto;
+    
+}
+  
+
+  
+ 
+
+/**************************************** #BottomBlock ยังไม่ responsive*******************************************************/
+footer{
+    width: 100%;
+    height: auto;
+    background: #dcdcdc;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    padding-top: 1rem;
+    padding-right: 4rem;
+    width: 100%;
+    height: auto;
+}
+.footer-item:nth-child(1) h3/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    color: gray;
+    font-family: 'GlacialIndifferenceRegular'
+} 
+.footer-item:nth-child(1) p/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    color: gray;
+    font-family: 'GlacialIndifferenceRegular';
+} 
+.footer-item:nth-child(2) h3/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    color: gray;
+    font-family: 'GlacialIndifferenceRegular';
+} 
+.footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    width: 300px;
+    height: 50px;
+    background: #fffafa;
+    font-family: 'GlacialIndifferenceRegular';
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 20%;
+    padding: 5px;
+   
+} 
+.footer-item:nth-child(2) input[type="submit"]/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+    width: 100px;
+    background : gray;
+    font-family: 'GlacialIndifferenceRegular';    
+    text-transform: uppercase;
+    color: rgb(202, 199, 199);
+} 
+
+
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+    .content-info4,.content-info5,.content-info2 h3{
+        font-size: 100%;
+    }
+    .content-info1 h3{
+        font-size: 100%;    
+        
+        
+    }
+    
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .footer-grid{
+        grid-template-columns:1fr ;
+        font-size: small;
+    }
+    .footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+        width: 100%;
+        height: auto;
+        background: #fffafa;
+        font-family: 'GlacialIndifferenceRegular';
+        border: none;
+        outline: none;
+        margin-top: 10px;
+        padding: 5px
+    }    
+    .footer-item:nth-child(2) input/***กรณีชื่อclassเหมือนกันให้ใส่ ngt-child***/{
+        
+        margin-top: 2px;
+        margin-bottom: 0;
+        padding: 5px;
+        
+       
+    } 
+}

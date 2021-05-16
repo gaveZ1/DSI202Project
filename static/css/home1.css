@@ -1,0 +1,205 @@
+
+header{
+    font-family: 'Chonburi', cursive;;
+    border-bottom: black;
+    min-height: 100vh;    
+}
+/* ************************************************** */
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    min-width: 50vh;
+    min-height: 100vh;
+    transform: translate(-50%,-50%);
+    background-color:black ;
+}
+/* ************************************************ */
+.NAVBAR1 {
+    background-color:black;
+    font-family: 'Chonburi', cursive;
+    font-size: 1rem;
+    
+}
+
+.nav-link{
+    border-radius: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.nav-link:hover{
+    border: 1px ;
+    background: rgb(133, 128, 128);
+}
+
+.content-info{
+    text-align: center;
+
+}
+
+.content-info h1{
+    font-family: 'Chonburi', cursive;
+    font-size: 8rem;
+    text-shadow: 0.1em 0.1em 0.01em rgb(180, 178, 178);    
+    margin-top: 3rem;
+    
+}
+
+.content-info p{
+    font-family: 'GlacialIndifferenceRegular','Prompt', sans-serif;
+    margin-top: 5rem;
+    font-size: 300%;
+} 
+
+.content-info2{   
+        padding: 5% 10% ;
+        font-family: 'Chonburi', cursive;
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 1rem;
+}
+
+
+
+/* ********************banner******************** */
+
+.carousel-caption{
+    position: absolute;
+    top: 55%;
+    transform: translate(-15%,-55%);
+    left: -8%;
+}
+
+.carousel-caption h3{
+    color: white;
+    margin-bottom: 2rem;
+    font-family: 'GlacialIndifferenceRegular','Prompt', sans-serif;
+    font-size: 2rem;
+
+}
+
+
+.btn0 {
+    color: black;
+    width: 70%;
+    height:50px;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 0.5rem;
+    margin: auto;
+    font-size: 2rem;
+    text-decoration: none;
+}
+ .btn0 a{
+    color: black;
+    width: 70%;
+    height:50px;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 0.5rem;
+    margin: auto;
+    font-size: 2rem;
+ }
+
+@media screen and (max-width: 800px) {
+    
+    .content-info h1{
+        font-family: 'Chonburi', cursive;
+        font-size: 3rem;
+        text-shadow: 0.1em 0.1em 0.01em rgb(180, 178, 178);    
+        margin-top: 3rem;
+        
+    }
+
+    .content-info p{
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.75rem;
+    } 
+    
+    .content-info2 h1{   
+    
+        font-size:2rem;
+    }
+
+    .carousel-caption h3{
+        font-family: 'GlacialIndifferenceRegular','Prompt', sans-serif;
+        font-size: 2rem;
+        transform: translate(-20%,-5%);
+    }
+    .btn0{
+        font-size: 1.75rem;
+        width: 100%;
+        height: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .content-info h1{
+        font-family: 'Chonburi', cursive;
+        font-size: 3.5rem;
+        text-shadow: 0.1em 0.1em 0.01em rgb(180, 178, 178);    
+        margin-top: 3rem;
+        
+    }
+
+    .content-info p{
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 100%;
+    } 
+    
+    .content-info2 h1{   
+    
+        font-size:1.25rem;
+    }
+
+    .carousel-caption h3{
+        font-family: 'GlacialIndifferenceRegular','Prompt', sans-serif;
+        font-size: 0.8rem;
+        transform: translate(-8%,-30%);
+    }
+
+    .btn0{
+        font-size: 0.8rem;
+        width: 30%;
+        height: 20px;
+    }
+    
+}
+
+
+
+
+.btn0:hover{
+    border: 1px solid #f44336;
+    background: tomato;
+    transition: 1s;
+}
