@@ -26,6 +26,6 @@ $ python manage.py migrate
 ```
 
 ```bash
-$ pip install manage.py runservers 
+$ python manage.py runservers 
 ```
 
