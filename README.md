@@ -18,11 +18,11 @@ $ pip install -r requirementx.text
 ```
 
 ```bash
-$ pip install makemigrate.py
+$ python manage.py makemigrate
 ```
 
 ```bash
-$ pip install manage.py 
+$ python manage.py migrate
 ```
 
 ```bash
