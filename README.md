@@ -9,6 +9,7 @@
 
 
 ## Installation
+Get conda at https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package.
 
