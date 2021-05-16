@@ -14,11 +14,11 @@ Get conda at https://conda.io/projects/conda/en/latest/user-guide/install/index.
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package.
 
 ```bash
-$ pip install -r requirementx.text 
+pip install Django
 ```
 
 ```bash
-$ python manage.py makemigrate
+$ pip install -r requirementx.text 
 ```
 
 ```bash
