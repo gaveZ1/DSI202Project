@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>login</title>
+</head>
+      
+<body>
+
+
+    <!--HeadBlock-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light flex-nowrap">
+            <div class="container">
+                <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <span class="navbar-brand w-90"></span>
+                <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-5 ml-5">
+                            <a class="nav-link" href="http://127.0.0.1:5500/template/home.html">HOME</a>
+                            <!--ใส่linkใหม่ด้วยจ้า-->
+                        </li>
+                        <li class="nav-item mr-5 ml-5">
+                            <a class="nav-link" href="http://127.0.0.1:5500/template/product.html">CATEGORY</a>
+                        </li>
+                       
+                        <li class="nav-item mr-5 ml-5">
+                            <a class="nav-link" href="http://127.0.0.1:5500/template/payment.html">CART</a>
+                        </li>
+                        
+                        <li class="nav-item mr-5 ml-5">
+                            <a class="nav-link" href="http://127.0.0.1:5500/template/contact.html">CONTACT</a>
+                        </li>
+                        
+                        <li class="nav-item mr-5 ml-5">
+                            <a class="nav-link" href="http://127.0.0.1:5500/template/AboutUs.html">ABOUT US</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="w-90">
+                    <!--spacer-->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--loginblock-->
+    <section class="form">
+        <div class="container">
+            <div class="from-heading">
+                <h1>Login</h1>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <a>Email</a> <br> 
+                <div class="login-field">                     
+                <input type="text" name="username">                    
+                </div>
+                <a>Password<a><br>
+                <div class="login-field">                    
+                <input type="password" name="password">                    
+                </div>
+            </form>
+            <div class="sing-in">
+                <a href="/home"><button >SIGN IN </button></a>
+            </div>
+            <div class="create_link">
+                <a href="/Register">Create Account</a>
+                    <!--ใส่linkใหม่ด้วยจ้า-->
+                </div>  
+        </div>
+    </section>
+    
+    <!--logoแพทฟรอมต่างๆทิพย์
+    <footer>
+        <div class="container">
+                <div class="footer-item">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-line"></i>
+                    <i class="fab fa-instagram-square"></i>
+
+                </div>
+            </div>
+    </footer>-->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://kit.fontawesome.com/880e0f8b28.js" crossorigin="anonymous"></script>
+
+</html>

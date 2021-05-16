@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/home1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Home1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="../static/images/videobackground/BannerHomepage.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light container py-5">
+            <div class="container-fluid justify-content-between">
+                <ul class="navbar-nav flex-row ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-3 me-lg-1  ms-auto mb-2">
+                        {% if user.is_authenticated %}
+                        <li class="nav-item me-3 me-lg-1  ms-auto mb-2">
+                            <a class="nav-link d-sm-flex align-items-sm-center" href="/Profile1"  style="color: rgb(255, 255, 255); font-size: 1rem;">Profile</a> 
+                        </li>
+                        <li class="nav-item me-3 me-lg-1  ms-auto mb-2">
+                            <a class="nav-link d-sm-flex align-items-sm-center" href="/Logout"  style="color: rgb(255, 255, 255); font-size: 1rem;">Logout</a> 
+                        </li>
+                        {% else %}
+
+                      <a class="nav-link d-sm-flex align-items-sm-center" href="/Login"  style="color: rgb(255, 255, 255); font-size: 1rem;" >Log in</a> 
+                    </li>
+                    <li class="nav-item me-3 me-lg-1  ms-auto mb-2">
+                        <a class="nav-link d-sm-flex align-items-sm-center" href="/Register"  style="color: rgb(255, 255, 255); font-size: 1rem;">Sign up</a> 
+                    </li>
+                     {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <section id="home">
+        <video controls="" autoplay="" muted="" loop="">
+            <source src="../video/BannerHomepage.mp4" type="video/mp4">
+        </video>
+    </section> -->
+
+<section class="content">
+        <div class="NAVBAR1">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-5 ml-5">
+                            <a class="nav-link" href="/home" style="color: rgb(255, 255, 255);">HOME</a>
+                            <!--ใส่linkใหม่ด้วยจ้า-->
+                        </li>
+                        <li class="nav-item  mr-5 ml-5">
+                            <a class="nav-link" href="/product" style="color: rgb(255, 255, 255);">CATEGORY</a>
+                        </li>
+                        <li class="nav-item  mr-5 ml-5">
+                            <a class="nav-link" href="/payment" style="color: rgb(255, 255, 255);">CART</a>
+                        </li>
+                        <li class="nav-item  mr-5 ml-5">
+                            <a class="nav-link" href="/contact" style="color: rgb(255, 255, 255);">CONTACT</a>
+                        </li>
+                        <li class="nav-item  mr-5 ml-5">
+                            <a class="nav-link" href="/AboutUs" style="color: rgb(255, 255, 255);">ABOUT US</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>  
+        </div>
+
+        <div class="content-info">
+            <h1>ABBZAAB</h1>
+            <p>"Without excessive additives and <br>
+                preservatives, it's still ABBZAAB"<br>
+                (ถึงจะดูใสๆ แต่ข้างในแอบแซ่บ)</p>
+        </div>
+        <div class="content-info2">
+            <h1>MYSTERIOUS BOX</h1>
+        </div>
+</section>
+    <section class="image">
+        <div class="row mx-auto justify-content-center">
+            <div class="col-md-2 col-lg-2 col-2 col-sm-2">
+                <img src="../static/images/image/หมี.png" class="img-fluid w-75" ></a>
+            </div>
+
+            <div class="col-md-2 col-lg-3  col-2 col-sm-2">
+                <img src="../static/images/image/รถ.png" class="img-fluid w-75" ></a>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-2 col-sm-2">
+               <img src="../static/images/image/วาฬ.png" class="img-fluid w-75" ></a>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-2 col-sm-2">
+                <img src="../static/images/image/ดาว.png" class="img-fluid w-75" ></a>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-2 col-sm-2">
+                <img src="../static/images/image/ดอกไม้.png" class="img-fluid w-75"></a>
+            </div>
+        </div>
+    </section> 
+
+    <div id="carouselExampleIndicators" class="carousel slid pt-5" data-bs-ride="carousel" data-interval="2000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../static/images/image/461B1519-0BDF-46FC-970F-B10E38FFD411.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-caption ">
+            <div class="container">
+                <div class="row justify-content-start text-left">
+                    <div class="col-lg-4 col-sm-6 col-md-4 ">
+                        <h3> UP TO <br>
+                            30% OFF <br>
+                            <br>
+                            <a href="/product"><button class="btn0"><p>Products</p></button></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+
+ 
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="../JAVA/style.jav"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://kit.fontawesome.com/880e0f8b28.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="../JAVA/style.jav"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://kit.fontawesome.com/880e0f8b28.js" crossorigin="anonymous"></script>
+
+</html>
